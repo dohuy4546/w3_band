@@ -9,17 +9,20 @@ html{
 }
 
 #main{
-
+    height: 1000px;
 }
 
 #header{
+    top: 0;
     height: 46px;
+    width: 100%;
     background-color: #000;
-
+    position: fixed;
+    z-index: 1000;
 }
 
 #nav{
-
+    display: inline-block;
 }
 
 #nav li{
@@ -38,6 +41,7 @@ html{
     padding:0px 24px;
     display: block;
 }
+
 #nav > li:hover > a,
 #nav .subnav li:hover a{
     color: #000;
@@ -47,6 +51,11 @@ html{
 #nav li:hover .subnav{
     display: block;
 }
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
 #nav, .subnav{
     list-style-type: none;
 }
@@ -71,10 +80,52 @@ html{
     line-height: 38px;
 }
 
-#slider{
-    /* min-height: 500px;
-    background-color: #333; */
+#header .search-button{
+    line-height: 46px;
+    float: right;
+    padding: 0px 24px;
 }
+
+#header .search-button:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-button .search-icon{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('./img/Los\ Angeles.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 32px 16px;
+    color: #fff;
+}
+
+#slider .text-content .text-header{
+    margin: 10px 0px;
+    font-size: 24px;
+    font-weight: 400s;
+}
+
+#slider .text-content .text-description{
+    margin: 15px 0px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
 
 #content{
 

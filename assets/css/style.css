@@ -19,6 +19,7 @@ html{
     background-color: #000;
     position: fixed;
     z-index: 1000;
+    font-weight: 600;
 }
 
 #nav{
@@ -117,18 +118,70 @@ html{
 #slider .text-content .text-header{
     margin: 10px 0px;
     font-size: 24px;
-    font-weight: 400s;
+    font-weight: 600;
 }
 
 #slider .text-content .text-description{
     margin: 15px 0px;
     font-size: 15px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 
 #content{
+    
+}
 
+#content .content-section{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 64px 16px;
+}
+
+#content .content-section .section-heading{
+    margin: 10px 0px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+#content .content-section .section-sub-heading{
+    margin: 15px 0px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+#content .content-section .about-text{
+    text-align: justify !important;
+    margin: 15px 0;
+    font-size: 15px;
+    font-weight: 1000;
+    line-height: 1.5;
+}
+
+#content .content-section .member-list{
+    padding: 32px 0px;
+}
+
+#content .content-section .member-list .name{
+    font-weight: 900;
+}
+
+#content .content-section .member-list .name p{
+    display: inline-block;
+}
+
+#content .content-section .member-list .avatar{
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#content .content-section .member-list .avatar .member-avatar{
+    width: 153px;
+    height: 153px;
 }
 
 #footer{

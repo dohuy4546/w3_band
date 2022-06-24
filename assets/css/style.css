@@ -3,6 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+.clear{
+    clear: both;
+}
+
+.text-white{
+    color: #fff !important;
+}
 
 html{
     font-family: 'Mulish', sans-serif;
@@ -102,7 +109,7 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('./img/Los\ Angeles.jpg') top center / cover no-repeat;
+    background: url('./img/slider/Los\ Angeles.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content{
@@ -144,12 +151,14 @@ html{
     margin: 10px 0px;
     letter-spacing: 4px;
     font-weight: bold;
+    font-size: 30px;
 }
 
 #content .content-section .section-sub-heading{
     margin: 15px 0px;
     font-style: italic;
     opacity: 0.8;
+    font-size: 15px;
 }
 
 #content .content-section .about-text{
@@ -160,28 +169,128 @@ html{
     line-height: 1.5;
 }
 
-#content .content-section .member-list{
+#content .member-list{
     padding: 32px 0px;
+    overflow: hidden;
 }
 
-#content .content-section .member-list .name{
+#content .member-list .member-item{
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+}
+
+#content .member-list .member-item .member-name{
+    font-size: 15px;
+    font-weight: 900;
+    margin: 15px 0px;
+}
+
+#content .member-list .member-item .member-avatar{
+    width: 154px;
+    height: 154px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+}
+
+.tour-section{
+    background-color: #000;
+    padding-bottom: 64px;
+}
+
+.tickets-lists{
+    background-color: #fff;
+    color: #000;
+    margin-top: 33px;
+    text-align: left;
+    list-style: none;
+}
+
+.tickets-lists li{
+    font-size: 15px;
+    padding: 11px 16px;
+    color: #757575;
+}
+
+.tickets-lists .sold-out{
+    color: #fff;
+    background-color: #f44336;
+    padding: 4px 4px;
+    margin-left: 16px;
+}
+
+.tickets-lists .quantity{
+    float: right;
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+}
+
+hr{
+    color: #ddd;
+}
+
+.place-list{
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.place-item{
+    float: left;
+    width: 33.33333%;
+    padding: 0px 8px;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover{
+    opacity: 0.7;
+}
+
+.place-body{
+    background-color: #fff;
+    text-align: left;
+    padding: 16px 16px;
+    font-size: 15px;
+
+}
+
+.place-heading{
+    
+}
+
+.place-time{
+    margin: 15px 0px;
+    color: #757575;
+}
+
+.place-description{
+    margin: 15px 0px;
+    line-height: 1.5;
     font-weight: 900;
 }
 
-#content .content-section .member-list .name p{
+.place-buy-btn{
     display: inline-block;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: 900;
 }
 
-#content .content-section .member-list .avatar{
-    margin: 15px 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#content .content-section .member-list .avatar .member-avatar{
-    width: 153px;
-    height: 153px;
+.place-buy-btn:hover{
+    background-color: #ccc;
+    color: #000;
 }
 
 #footer{

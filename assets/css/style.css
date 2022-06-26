@@ -3,7 +3,34 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Common */
+.btn{
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-weight: 600;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.pull-right{
+    float: right;
+}
+
 .clear{
+    clear: both;
+}
+
+.row::after{
+    content: "";
+    display: block;
     clear: both;
 }
 
@@ -11,6 +38,40 @@
     color: #fff !important;
 }
 
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float: left;
+    padding: 0px 8px;
+}
+
+.mt-8{
+    margin-top: 8px;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+.col-ful{
+    width: 100%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-third{
+    width: 33.3333%;
+}
+
+.text-center{
+    text-align: center;
+}
+/* main */
 html{
     font-family: 'Mulish', sans-serif;
 }
@@ -143,8 +204,7 @@ html{
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    padding: 64px 16px;
+    padding: 64px 16px 112px;
 }
 
 #content .content-section .section-heading{
@@ -174,28 +234,20 @@ html{
     overflow: hidden;
 }
 
-#content .member-list .member-item{
-    float: left;
-    width: 33.3333%;
-    text-align: center;
-}
-
-#content .member-list .member-item .member-name{
+#content .member-list .member-name{
     font-size: 15px;
     font-weight: 900;
     margin: 15px 0px;
 }
 
-#content .member-list .member-item .member-avatar{
+#content .member-list .member-avatar{
     width: 154px;
     height: 154px;
-    margin-bottom: 16px;
     border-radius: 10px;
 }
 
 .tour-section{
     background-color: #000;
-    padding-bottom: 64px;
 }
 
 .tickets-lists{
@@ -229,6 +281,7 @@ html{
     text-align: center;
     line-height: 24px;
     color: #fff;
+    transform: translateY(-2px);
 }
 
 hr{
@@ -237,14 +290,10 @@ hr{
 
 .place-list{
     margin-top: 32px;
-    margin-left: -8px;
-    margin-right: -8px;
 }
 
 .place-item{
-    float: left;
     width: 33.33333%;
-    padding: 0px 8px;
 }
 
 .place-img{
@@ -277,21 +326,6 @@ hr{
     margin: 15px 0px;
     line-height: 1.5;
     font-weight: 900;
-}
-
-.place-buy-btn{
-    display: inline-block;
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 12px 16px;
-    font-weight: 600;
-    border: none;
-}
-
-.place-buy-btn:hover{
-    background-color: #ccc;
-    color: #000;
 }
 
 #footer{
@@ -407,4 +441,66 @@ hr{
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info i{
+    margin-right: 15px;
+}
+
+.contact-info p{
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-submit{
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 16px;
+    float: right;
+    border: none;
+}
+
+.form-submit:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+#footer{
+    padding: 64px 0px;
+    text-align: center;
+}
+
+#footer .social-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+#footer .social-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+    cursor: default;
+}
+
+#footer p,
+#footer > p a{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.7);
 }

@@ -1,0 +1,51 @@
+@media (min-width: 1024px) {}
+
+@media (max-width: 1023px) and (min-width: 740px) {}
+
+@media (max-width: 739px) {
+    #nav>li {
+        display: block;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #band.content-section.text-center {
+        padding: 64px 16px;
+    }
+
+    .search-button {
+        display: none;
+    }
+
+    #header .mobile-menu-button {
+        display: block;
+    }
+
+    #slider .text-content {
+        padding: 0px 16px;
+    }
+
+    #content .member-list .member-avatar {
+        width: 205px;
+        height: 205px;
+    }
+
+    .mt-8 {
+        margin: 0px -8px;
+    }
+
+    .col {
+        float: none;
+        padding: 6px 8px;
+    }
+
+    .col-third {
+        width: 100%;
+    }
+
+    .col-half {
+        width: 100%;
+    }
+}

@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 /* Common */
-.btn{
+.btn {
     display: inline-block;
     color: #fff;
     background-color: #000;
@@ -15,121 +15,123 @@
     border: none;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #ccc;
     color: #000;
 }
 
-.pull-right{
+.pull-right {
     float: right;
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
-.row::after{
+.row::after {
     content: "";
     display: block;
     clear: both;
 }
 
-.text-white{
+.text-white {
     color: #fff !important;
 }
 
-.row{
+.row {
     margin-left: -8px;
     margin-right: -8px;
 }
 
-.col{
+.col {
     float: left;
     padding: 0px 8px;
 }
 
-.mt-8{
+.mt-8 {
     margin-top: 8px;
 }
 
-.mt-16{
+.mt-16 {
     margin-top: 16px;
 }
 
-.col-ful{
+.col-ful {
     width: 100%;
 }
 
-.col-half{
+.col-half {
     width: 50%;
 }
 
-.col-third{
+.col-third {
     width: 33.3333%;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
+
 /* main */
-html{
-    font-family: 'Mulish', sans-serif;
+html {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#main{
+#main {
     height: 1000px;
 }
 
-#header{
+#header {
     top: 0;
     height: 46px;
     width: 100%;
     background-color: #000;
     position: fixed;
     z-index: 1;
-    font-weight: 600;
 }
 
-#nav{
+#nav {
     display: inline-block;
 }
 
-#nav li{
+#nav li {
     display: inline-block;
     position: relative;
 }
 
-#nav > li > a{
+#nav>li>a {
     color: #fff;
     text-transform: uppercase;
 }
 
-#nav li a{
+#nav li a {
     text-decoration: none;
     line-height: 46px;
-    padding:0px 24px;
+    padding: 0px 24px;
     display: block;
 }
 
-#nav > li:hover > a,
-#nav .subnav li:hover a{
+#nav>li:hover>a,
+#nav .subnav li:hover a {
     color: #000;
     background-color: #ccc;
 }
 
-#nav li:hover .subnav{
+#nav li:hover .subnav {
     display: block;
 }
 
-#nav .nav-arrow-down{
+#nav .nav-arrow-down {
     font-size: 14px;
 }
 
-#nav, .subnav{
+#nav,
+.subnav {
     list-style-type: none;
 }
 
-#nav .subnav{
+#nav .subnav {
     display: none;
     position: absolute;
     top: 100%;
@@ -139,41 +141,55 @@ html{
     min-width: 160px;
 }
 
-#nav .subnav li{
+#nav .subnav li {
     display: block;
 }
 
-#nav .subnav a{
+#nav .subnav a {
     color: #000;
     padding: 0px 12px;
     line-height: 38px;
 }
 
-#header .search-button{
+#header .mobile-menu-button {
+    display: none;
+}
+
+#header .mobile-menu-button,
+#header .search-button {
     line-height: 46px;
     float: right;
     padding: 0px 24px;
 }
 
-#header .search-button:hover{
+#header .search-button:hover {
     background-color: #f44336;
     cursor: pointer;
 }
 
-#header .search-button .search-icon{
-    color: #fff;
-    font-size: 16px;
-    font-weight: bolder;
+.mobile-menu-button:hover {
+    background-color: #ccc;
 }
 
-#slider{
+.mobile-menu-button:hover .menu-icon {
+    color: #000;
+}
+
+.mobile-menu-button .menu-icon,
+#header .search-button .search-icon {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#slider {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
     background: url('./img/slider/Los\ Angeles.jpg') top center / cover no-repeat;
 }
 
-#slider .text-content{
+#slider .text-content {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -183,74 +199,68 @@ html{
     color: #fff;
 }
 
-#slider .text-content .text-header{
+#slider .text-content .text-header {
     margin: 10px 0px;
     font-size: 24px;
-    font-weight: 600;
 }
 
-#slider .text-content .text-description{
+#slider .text-content .text-description {
     margin: 15px 0px;
     font-size: 15px;
-    font-weight: bold;
 }
 
 
-#content{
-    
-}
+#content {}
 
-#content .content-section{
+#content .content-section {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 16px 112px;
 }
 
-#content .content-section .section-heading{
+#content .content-section .section-heading {
     margin: 10px 0px;
     letter-spacing: 4px;
-    font-weight: bold;
     font-size: 30px;
+    font-weight: 500;
 }
 
-#content .content-section .section-sub-heading{
+#content .content-section .section-sub-heading {
     margin: 15px 0px;
     font-style: italic;
     opacity: 0.8;
     font-size: 15px;
 }
 
-#content .content-section .about-text{
+#content .content-section .about-text {
     text-align: justify !important;
     margin: 15px 0;
     font-size: 15px;
-    font-weight: 1000;
     line-height: 1.5;
 }
 
-#content .member-list{
+#content .member-list {
     padding: 32px 0px;
     overflow: hidden;
 }
 
-#content .member-list .member-name{
+#content .member-list .member-name {
     font-size: 15px;
-    font-weight: 900;
     margin: 15px 0px;
 }
 
-#content .member-list .member-avatar{
+#content .member-list .member-avatar {
     width: 154px;
     height: 154px;
     border-radius: 10px;
 }
 
-.tour-section{
+.tour-section {
     background-color: #000;
 }
 
-.tickets-lists{
+.tickets-lists {
     background-color: #fff;
     color: #000;
     margin-top: 33px;
@@ -258,20 +268,20 @@ html{
     list-style: none;
 }
 
-.tickets-lists li{
+.tickets-lists li {
     font-size: 15px;
     padding: 11px 16px;
     color: #757575;
 }
 
-.tickets-lists .sold-out{
+.tickets-lists .sold-out {
     color: #fff;
     background-color: #f44336;
     padding: 4px 4px;
     margin-left: 16px;
 }
 
-.tickets-lists .quantity{
+.tickets-lists .quantity {
     float: right;
     margin-right: 16px;
     width: 24px;
@@ -284,28 +294,28 @@ html{
     transform: translateY(-2px);
 }
 
-hr{
+hr {
     color: #ddd;
 }
 
-.place-list{
+.place-list {
     margin-top: 32px;
 }
 
-.place-item{
+.place-item {
     width: 33.33333%;
 }
 
-.place-img{
+.place-img {
     width: 100%;
     display: block;
 }
 
-.place-img:hover{
+.place-img:hover {
     opacity: 0.7;
 }
 
-.place-body{
+.place-body {
     background-color: #fff;
     text-align: left;
     padding: 16px 16px;
@@ -313,26 +323,21 @@ hr{
 
 }
 
-.place-heading{
-    
-}
+.place-heading {}
 
-.place-time{
+.place-time {
     margin: 15px 0px;
     color: #757575;
 }
 
-.place-description{
+.place-description {
     margin: 15px 0px;
     line-height: 1.5;
-    font-weight: 900;
 }
 
-#footer{
+#footer {}
 
-}
-
-.modal{
+.modal {
     position: fixed;
     z-index: 2;
     top: 0;
@@ -346,11 +351,11 @@ hr{
     display: none;
 }
 
-.modal.open{
+.modal.open {
     display: flex;
 }
 
-.modal .modal-container{
+.modal .modal-container {
     width: 900px;
     max-width: calc(100% - 32px);
     min-height: 200px;
@@ -359,12 +364,11 @@ hr{
     animation: modalFadein ease 0.5s;
 }
 
-.modal-header{
+.modal-header {
     background-color: #009688;
     color: #fff;
     height: 100px;
     font-size: 30px;
-    font-weight: 900;
     letter-spacing: 7px;
     display: flex;
     align-items: center;
@@ -372,34 +376,33 @@ hr{
     padding: 64px 0px;
 }
 
-.modal-header .modal-heading-icon{
+.modal-header .modal-heading-icon {
     margin-right: 12px;
 }
 
-.modal-close{
+.modal-close {
     position: absolute;
     right: 0;
     padding: 16px 16px;
     color: #fff;
 }
 
-.modal-close:hover{
+.modal-close:hover {
     opacity: 0.8;
     cursor: pointer;
 }
 
-.modal-container .modal-body{
+.modal-container .modal-body {
     padding: 16px;
 }
 
-.modal-body label{
+.modal-body label {
     display: block;
     font-size: 15px;
-    font-weight: 900;
     margin-bottom: 12px;
 }
 
-.modal-body input{
+.modal-body input {
     border: 1px solid #ccc;
     font-size: 15px;
     width: 100%;
@@ -407,67 +410,66 @@ hr{
     margin-bottom: 24px;
 }
 
-#buy-ticket{
+#buy-ticket {
     width: 100%;
     background-color: #009688;
     color: #fff;
     padding: 16px 0px;
     border: none;
     font-size: 15px;
-    font-weight: 600;
     text-transform: uppercase;
 }
 
-#buy-ticket:hover{
+#buy-ticket:hover {
     opacity: 0.9;
     cursor: pointer;
 }
 
-.modal-footer{
+.modal-footer {
     padding: 16px;
     text-align: right;
 }
 
-.modal-footer a{
+.modal-footer a {
     color: #2196F3;
 }
 
-@keyframes modalFadein{
-    from{
+@keyframes modalFadein {
+    from {
         opacity: 0;
         transform: translateY(-140px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.contact-content{
+.contact-content {
     margin-top: 48px;
 }
 
-.contact-info i{
+.contact-info i {
     margin-right: 15px;
 }
 
-.contact-info p{
+.contact-info p {
     font-size: 18px;
-    font-weight: 900;
     line-height: 1.5;
 }
 
-.contact-form{
+.contact-form {
     font-size: 15px;
 }
 
-.contact-form .form-control{
+.contact-form .form-control {
     padding: 12px;
     border: 1px solid #ccc;
     width: 100%;
 }
 
-.form-submit{
+.form-submit {
     background: #000;
     color: #fff;
     font-size: 15px;
@@ -476,31 +478,31 @@ hr{
     border: none;
 }
 
-.form-submit:hover{
+.form-submit:hover {
     background-color: #ccc;
     color: #000;
     cursor: pointer;
 }
 
-#footer{
+#footer {
     padding: 64px 0px;
     text-align: center;
 }
 
-#footer .social-list a{
+#footer .social-list a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
     font-size: 20px;
     margin-right: 4px;
 }
 
-#footer .social-list a:hover{
+#footer .social-list a:hover {
     color: rgba(0, 0, 0, 0.4);
     cursor: default;
 }
 
 #footer p,
-#footer > p a{
+#footer>p a {
     margin-top: 15px;
     color: rgba(0, 0, 0, 0.7);
 }

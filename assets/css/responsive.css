@@ -48,4 +48,27 @@
     .col-half {
         width: 100%;
     }
+
+    #nav .subnav {
+        position: unset;
+    }
+
+    #nav .subnav li {
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 0px 41px;
+    }
+
+    .nav-arrow-down {
+        right: 26px;
+        position: absolute;
+        line-height: 53px !important;
+    }
+
+    .s-full-width {
+        width: 100%;
+    }
 }

@@ -92,6 +92,11 @@ html {
 }
 
 #nav {
+    display: block;
+    position: relative;
+}
+
+#nav li:first-child {
     display: inline-block;
 }
 
@@ -158,7 +163,9 @@ html {
 #header .mobile-menu-button,
 #header .search-button {
     line-height: 46px;
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     padding: 0px 24px;
 }
 
